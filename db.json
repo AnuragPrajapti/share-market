@@ -1,0 +1,70 @@
+{
+  "productDetails": [
+    {
+      "id": 0,
+      "scrip": "AADR",
+      "Quantity": "430",
+      "Price": "$50.30",
+      "Avg.Cost": "$41.75",
+      "Invested Amount": "$17,952.07",
+      "% of Portfolio Value": "22.06%",
+      "Unrealized P&L": "$3,676.93",
+      "Return": "20.48%"
+    },
+    {
+      "id": 1,
+      "scrip": "MFEM",
+      "Quantity": "210",
+      "Price": "$23.20",
+      "Avg.Cost": "$22.50",
+      "Invested Amount": "$4,725.84",
+      "% of Portfolio Value": "5.81%",
+      "Unrealized P&L": "$146.16",
+      "Return": "3.09%"
+    },
+    {
+      "id": 2,
+      "scrip": "JPEM",
+      "Quantity": "328",
+      "Price": "$52.50",
+      "Avg.Cost": "$56.70",
+      "Invested Amount": "$18,597.60",
+      "% of Portfolio Value": "22.86%",
+      "Unrealized P&L": "-$1,377.60",
+      "Return": "-8.26%"
+    },
+    {
+      "id": 3,
+      "scrip": "AADR",
+      "Quantity": "430",
+      "Price": "$50.30",
+      "Avg.Cost": "",
+      "Invested Amount": "",
+      "% of Portfolio Value": "",
+      "Unrealized P&L": "",
+      "Return": ""
+    },
+    {
+      "id": 4,
+      "scrip": "AADR",
+      "Quantity": "430",
+      "Price": "$50.30",
+      "Avg.Cost": "",
+      "Invested Amount": "",
+      "% of Portfolio Value": "",
+      "Unrealized P&L": "",
+      "Return": ""
+    },
+    {
+      "id": 5,
+      "scrip": "AADR",
+      "Quantity": "430",
+      "Price": "$50.30",
+      "Avg.Cost": "",
+      "Invested Amount": "",
+      "% of Portfolio Value": "",
+      "Unrealized P&L": "",
+      "Return": ""
+    }
+  ]
+}
