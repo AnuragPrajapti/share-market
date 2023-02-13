@@ -6,6 +6,7 @@
       "scriptValue": "$286.8",
       "Quantity": "430",
       "Price": "$50.30",
+      "defaultValue": "40",
       "AvgCost": "$41.75",
       "InvestedAmount": "$17,952.07",
       "PortfolioValue": "22.06%",
@@ -13,7 +14,7 @@
       "Unrealized": "$3,676.93",
       "Return": "20.48%",
       "share": "US Equity",
-      "shareName" : "S&P 500 Index"
+      "shareName": "S&P 500 Index"
     },
     {
       "id": 1,
@@ -21,6 +22,7 @@
       "scriptValue": "$286.8",
       "Quantity": "210",
       "Price": "$23.20",
+      "defaultValue": "20",
       "AvgCost": "$22.50",
       "marketValue": "$9,545.54",
       "InvestedAmount": "$4,725.84",
@@ -28,7 +30,7 @@
       "Unrealized P&L": "$146.16",
       "Return": "3.09%",
       "share": "US Equity",
-      "shareName" : "S&P 500 Index"
+      "shareName": "S&P 500 Index"
     },
     {
       "id": 2,
@@ -36,15 +38,15 @@
       "scriptValue": "$286.8",
       "Quantity": "328",
       "Price": "$52.50",
+      "defaultValue": "10",
       "AvgCost": "$56.70",
       "marketValue": "$9,545.54",
-
       "Invested Amount": "$18,597.60",
       "PortfolioValue": "22.86%",
       "Unrealized P&L": "-$1,377.60",
       "Return": "-8.26%",
       "share": "US Equity",
-      "shareName" : "S&P 500 Index"
+      "shareName": "S&P 500 Index"
     },
     {
       "id": 3,
@@ -52,15 +54,15 @@
       "scriptValue": "$286.8",
       "Quantity": "430",
       "Price": "$50.30",
+      "defaultValue": "50",
       "AvgCost": "",
-     
       "marketValue": "$9,545.54",
       "Invested Amount": "",
       "PortfolioValue": "",
       "Unrealized P&L": "",
       "Return": "",
       "share": "US Equity",
-      "shareName" : "S&P 500 Index"
+      "shareName": "S&P 500 Index"
     },
     {
       "id": 4,
@@ -68,31 +70,31 @@
       "scriptValue": "$286.8",
       "Quantity": "430",
       "Price": "$50.30",
+      "defaultValue": "5",
       "AvgCost": "",
-     
       "marketValue": "$9,545.54",
       "Invested Amount": "",
       "PortfolioValue": "",
       "Unrealized P&L": "",
       "Return": "",
       "share": "US Equity",
-      "shareName" : "S&P 500 Index"
+      "shareName": "S&P 500 Index"
     },
     {
       "id": 5,
       "scrip": "AADR",
-      "scriptValue": "$286.8",
+      "scriptValue": "$296.8",
       "Quantity": "430",
       "Price": "$50.30",
-      "AvgCost": "",
-     
+      "defaultValue": "30",
+      "AvgCost": "46.5",
       "marketValue": "$9,545.54",
-      "Invested Amount": "",
-      "PortfolioValue": "",
-      "Unrealized P&L": "",
-      "Return": "",
+      "Invested Amount": "$8595.44",
+      "PortfolioValue": "30%",
+      "Unrealized P&L": "$9504",
+      "Return": "5.08%",
       "share": "US Equity",
-      "shareName" : "S&P 500 Index"
+      "shareName": "S&P 500 Index"
     }
   ]
 }

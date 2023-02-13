@@ -1,6 +1,6 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react'
-import { Col, Container, Row } from 'react-bootstrap';
+import { Button, Col, Container, Row } from 'react-bootstrap';
 import Chart from 'react-apexcharts'
 import { BsList, BsAspectRatio, BsAt, BsBank2 } from "react-icons/bs";
 import './iStockList.scss'
@@ -12,10 +12,17 @@ const IStockList = () => {
   const [getStockData, setGetStockData] = useState();
   const [chartData, setChartDAta] = useState({
     options: {
-
+      colors : [ "#1ac3de" , "#bd8a0e" ],
+      labels: ['Mutual Funds' , 'ETFs'],
+      dataLabels: {
+        enabled: true,
+        enabledOnSeries: undefined,
+        formatter: function () {
+            return ''
+        },
+      }
     },
-    series: [15, 23],
-    labels: ['Manualy Founds', 'ETFs']
+    series: [26, 19],
   })
 
   useEffect(() => {
@@ -90,7 +97,7 @@ const IStockList = () => {
                           <li>
                             <Slider 
                               min={0}
-                              trackStyle={{ backgroundColor: "darkblue", height: 10 }}
+                              trackStyle={{ backgroundColor: "#15a215", height: 10 }}
                               railStyle={{
                                 backgroundColor: "rgba(25, 25, 25, 0.12)",
                                 height: 10,
@@ -104,7 +111,7 @@ const IStockList = () => {
                                 border: " solid 0.3px rgba(0, 0, 0, 0.5)",
                                 opacity: "0",
                               }}
-                              defaultValue={30}
+                              defaultValue={value?.defaultValue}
                               max={100}
                             />
                           </li>
@@ -122,7 +129,7 @@ const IStockList = () => {
                           <li>
                           <Slider 
                               min={0}
-                              trackStyle={{ backgroundColor: "darkblue", height: 10 }}
+                              trackStyle={{ backgroundColor: "red", height: 10 }}
                               railStyle={{
                                 backgroundColor: "rgba(25, 25, 25, 0.12)",
                                 height: 10,
@@ -136,11 +143,15 @@ const IStockList = () => {
                                 border: " solid 0.3px rgba(0, 0, 0, 0.5)",
                                 opacity: "0",
                               }}
-                              defaultValue={30}
+                              defaultValue={value?.defaultValue}
                               max={100}
                             />
                           </li>
                         </ul>
+                      </Col>
+                      <Col className='button-section' >
+                        <Button>BUY</Button>
+                        <Button>SELL</Button>
                       </Col>
                     </Row>
                   </div>
