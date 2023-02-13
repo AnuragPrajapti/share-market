@@ -1,4 +1,4 @@
-import * as type from "../types";
+import * as type from "../types/type";
 
 const inistioalState = {
   IStockData: [],

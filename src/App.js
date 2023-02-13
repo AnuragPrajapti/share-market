@@ -1,7 +1,10 @@
+import IStockList from "./pages/iStockList/iStockList";
+import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
+
 const App = () => {
   return (
     <div className="App">
-      <h1>Welcome to i-share</h1>
+      <IStockList />
     </div>
   );
 };

@@ -1,0 +1,161 @@
+.stock-wrapper-container {
+  padding: 50px 0 0 0;
+
+  .stock-item-list {
+    background-color: lightgray;
+    .stock-list {
+      background-color: white;
+      border-bottom: 10px solid lightgray;
+    
+      .script-title {
+         margin-top: 10px;
+        .list-icon {
+          font-size: 28px;
+          font-weight: 900;
+          max-width: 46px;
+          margin: 10px 0 0 0;
+          float: left;
+        }
+
+        p {
+          display: flex;
+          justify-content: center;
+          font-weight: 100;
+          font-family: initial;
+          font-size: 14px;
+          line-height: 0px;
+          padding-top: 9px;
+          margin-bottom: 0px;
+        }
+
+        span {
+          color: #28a491;
+          font-size: 28px;
+          display: flex;
+          justify-content: center;
+          margin: 10px 0 0 0px;
+        }
+      }
+
+      .company-name {
+        .title-name {
+          width: 150px;
+          margin-top: 10px;
+
+          b {
+            font-size: 32px;
+            line-height: 20px;
+            color: #96cf96;
+
+            span {
+              display: flex;
+              font-size: 14px;
+              margin: 0 0 0 47px;
+              color: black;
+              font-weight: 500;
+            }
+          }
+        }
+
+        .share-name {
+          p {
+            line-height: 25px;
+            font-size: 20px;
+            font-family: auto;
+            font-weight: 900;
+            letter-spacing: .1rem;
+            margin-bottom: 0px;
+          }
+        }
+      }
+
+      .share-value-rate {
+        max-width: 300px;
+
+        ul {
+          margin-top: 20px;
+
+          li {
+            display: block;
+            width: 200px;
+
+            p {
+              display: flow-root;
+              font-weight: 100;
+              font-size: 13px;
+              line-height: 0%;
+              margin-bottom: 0px !important;
+
+              svg {
+                margin-right: 5px;
+                font-size: 20px;
+              }
+
+              b {
+                display: block;
+                text-align: end;
+                position: relative;
+                bottom: 12px;
+              }
+            }
+          }
+        }
+      }
+
+      .market-value {
+        max-width: 300px;
+        padding: 0px 10px;
+
+        ul {
+          li {
+            display: flex;
+            width: 200px;
+            display: block;
+            padding: 0 6px;
+
+            p {
+              font-weight: 800;
+              font-size: 14px;
+              margin-top: 24px;
+              line-height: 2px;
+            }
+
+            span {
+              display: block;
+              text-align: end;
+              position: relative;
+              bottom: 2px;
+            }
+          }
+        }
+      }
+
+      .profit-loss {
+        max-width: 300px;
+
+        ul {
+          li {
+            display: flex;
+            width: 200px;
+            display: block;
+            padding: 0 6px;
+            margin-top: 18px;
+
+            p {
+              font-weight: 900;
+              font-size: 14px;
+              line-height: 5px;
+
+              span {
+                display: block;
+                text-align: end;
+                position: relative;
+                bottom: 5px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

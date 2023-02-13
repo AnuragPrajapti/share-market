@@ -3,68 +3,96 @@
     {
       "id": 0,
       "scrip": "AADR",
+      "scriptValue": "$286.8",
       "Quantity": "430",
       "Price": "$50.30",
-      "Avg.Cost": "$41.75",
-      "Invested Amount": "$17,952.07",
-      "% of Portfolio Value": "22.06%",
-      "Unrealized P&L": "$3,676.93",
-      "Return": "20.48%"
+      "AvgCost": "$41.75",
+      "InvestedAmount": "$17,952.07",
+      "PortfolioValue": "22.06%",
+      "marketValue": "$9,545.54",
+      "Unrealized": "$3,676.93",
+      "Return": "20.48%",
+      "share": "US Equity",
+      "shareName" : "S&P 500 Index"
     },
     {
       "id": 1,
       "scrip": "MFEM",
+      "scriptValue": "$286.8",
       "Quantity": "210",
       "Price": "$23.20",
-      "Avg.Cost": "$22.50",
-      "Invested Amount": "$4,725.84",
-      "% of Portfolio Value": "5.81%",
+      "AvgCost": "$22.50",
+      "marketValue": "$9,545.54",
+      "InvestedAmount": "$4,725.84",
+      "PortfolioValue": "5.81%",
       "Unrealized P&L": "$146.16",
-      "Return": "3.09%"
+      "Return": "3.09%",
+      "share": "US Equity",
+      "shareName" : "S&P 500 Index"
     },
     {
       "id": 2,
       "scrip": "JPEM",
+      "scriptValue": "$286.8",
       "Quantity": "328",
       "Price": "$52.50",
-      "Avg.Cost": "$56.70",
+      "AvgCost": "$56.70",
+      "marketValue": "$9,545.54",
+
       "Invested Amount": "$18,597.60",
-      "% of Portfolio Value": "22.86%",
+      "PortfolioValue": "22.86%",
       "Unrealized P&L": "-$1,377.60",
-      "Return": "-8.26%"
+      "Return": "-8.26%",
+      "share": "US Equity",
+      "shareName" : "S&P 500 Index"
     },
     {
       "id": 3,
       "scrip": "AADR",
+      "scriptValue": "$286.8",
       "Quantity": "430",
       "Price": "$50.30",
-      "Avg.Cost": "",
+      "AvgCost": "",
+     
+      "marketValue": "$9,545.54",
       "Invested Amount": "",
-      "% of Portfolio Value": "",
+      "PortfolioValue": "",
       "Unrealized P&L": "",
-      "Return": ""
+      "Return": "",
+      "share": "US Equity",
+      "shareName" : "S&P 500 Index"
     },
     {
       "id": 4,
       "scrip": "AADR",
+      "scriptValue": "$286.8",
       "Quantity": "430",
       "Price": "$50.30",
-      "Avg.Cost": "",
+      "AvgCost": "",
+     
+      "marketValue": "$9,545.54",
       "Invested Amount": "",
-      "% of Portfolio Value": "",
+      "PortfolioValue": "",
       "Unrealized P&L": "",
-      "Return": ""
+      "Return": "",
+      "share": "US Equity",
+      "shareName" : "S&P 500 Index"
     },
     {
       "id": 5,
       "scrip": "AADR",
+      "scriptValue": "$286.8",
       "Quantity": "430",
       "Price": "$50.30",
-      "Avg.Cost": "",
+      "AvgCost": "",
+     
+      "marketValue": "$9,545.54",
       "Invested Amount": "",
-      "% of Portfolio Value": "",
+      "PortfolioValue": "",
       "Unrealized P&L": "",
-      "Return": ""
+      "Return": "",
+      "share": "US Equity",
+      "shareName" : "S&P 500 Index"
     }
   ]
 }
