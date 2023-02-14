@@ -16,7 +16,7 @@
 
       .script-title {
         margin-top: 10px;
-
+        padding: 0 2px !important;
         .list-icon {
           font-size: 28px;
           font-weight: 900;
@@ -24,7 +24,7 @@
           margin: 10px 0 0 0;
           float: left;
         }
-
+        
         p {
           display: flex;
           justify-content: center;
@@ -41,6 +41,7 @@
           font-size: 28px;
           display: flex;
           justify-content: center;
+          padding: 0 20px;
           margin: 10px 0 0 0px;
         }
       }
@@ -49,7 +50,7 @@
         .title-name {
           width: 150px;
           margin-top: 10px;
-
+          
           b {
             font-size: 26px;
             line-height: 20px;
@@ -87,7 +88,7 @@
           li {
             display: block;
             width: 200px;
-
+             padding: 0 10px;
             p {
               display: flow-root;
               font-weight: 100;
@@ -118,11 +119,12 @@
         ul {
 
           padding-left: 0px !important;
+
           li {
             display: flex;
             width: 200px;
             display: block;
-            padding: 0 6px;
+            padding: 0 10px;
 
             p {
               font-weight: 800;
@@ -135,7 +137,7 @@
               display: block;
               text-align: end;
               position: relative;
-              bottom: 2px;
+              bottom: 0px;
             }
           }
         }
@@ -149,22 +151,22 @@
           padding-left: 0% !important;
 
           li {
-            display: flex;
             width: 200px;
             display: block;
-            padding: 0 6px;
-            margin-top: 20px;
+            padding: 0 10px;
+            margin-top: 24px;
 
             p {
               font-weight: 900;
               font-size: 14px;
-              line-height: 3px;
+              line-height: 0px;
+              margin-bottom: 0px !important;
 
               span {
                 display: block;
                 text-align: end;
                 position: relative;
-                bottom: 5px;
+                bottom: 0px;
               }
             }
           }
@@ -174,11 +176,12 @@
       .button-section {
         Button {
           color: rgb(223, 198, 88);
-          border: 1px solid rgb(216 185 49);
+          border: 2px solid rgb(216, 185, 49);
           background: transparent;
           margin: 8px 0 0 0;
-          width: 60px;
+          width: 55px;
           padding: 4px;
+          font-weight: 800;
           border-radius: 0px;
         }
       }

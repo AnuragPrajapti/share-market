@@ -124,7 +124,7 @@ const IStockList = () => {
                             <p>Unrealized P&L <span>{value?.Unrealized}</span></p>
                           </li>
                           <li>
-                            <p>% Return <span>{value?.Return}</span></p>
+                            <p style={{ fontWeight : '100' }} >% Return <span>{value?.Return}</span></p>
                           </li>
                           <li>
                           <Slider 
