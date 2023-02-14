@@ -6,10 +6,12 @@ import { BsList, BsAspectRatio, BsAt, BsBank2 } from "react-icons/bs";
 import './iStockList.scss'
 import Slider from 'rc-slider';
 import 'rc-slider/assets/index.css';
+import { useDispatch, useSelector } from 'react-redux';
+import { getStock } from '../../redux/action/getStock';
 
 const IStockList = () => {
-
-  const [getStockData, setGetStockData] = useState();
+  
+  const dispatch = useDispatch()
   const [chartData, setChartDAta] = useState({
     options: {
       colors : [ "#1ac3de" , "#bd8a0e" ],
@@ -24,16 +26,9 @@ const IStockList = () => {
     },
     series: [26, 19],
   })
-
-  useEffect(() => {
-    axios.get(`http://localhost:4000/productDetails`,)
-      .then((res) => {
-        setGetStockData(res.data)
-        return res.data
-      }).catch((err) => {
-        console.log(222, err)
-        return err
-      })
+  const getDataStock = useSelector( state => state?.getStock?.getData)
+  useEffect(() => { 
+    dispatch(getStock())
   }, [])
 
 
@@ -44,7 +39,7 @@ const IStockList = () => {
         <Row>
           <Col lg={10} className="stock-item-list" >
             {
-              getStockData ? getStockData.map((value, index) => {
+              getDataStock ? getDataStock.map((value, index) => {
                 return (
                   <div className='stock-list' key={index} >
                     <Row>

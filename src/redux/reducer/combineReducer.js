@@ -1,8 +1,8 @@
-import { combineReducers } from "redux";
-import { IStock } from "./stockReducer";
+import { combineReducers } from 'redux'
+import getStock from './reducer';
 
-const CombineReducers = combineReducers({
-    IStock : IStock
+const rootReducer = combineReducers({
+  getStock : getStock,
 })
 
-export default CombineReducers;
+export default rootReducer;
