@@ -1,37 +1,38 @@
-import axios from 'axios';
-import React, { useEffect, useState } from 'react'
-import { Button, Col, Container, Row } from 'react-bootstrap';
-import Chart from 'react-apexcharts'
+import { useEffect, useState } from 'react';
+import { Button, Col, Container, Form, Row, } from 'react-bootstrap';
+import Chart from 'react-apexcharts';
 import { BsList, BsAspectRatio, BsAt, BsBank2 } from "react-icons/bs";
-import './iStockList.scss'
+import './iStockList.scss';
 import Slider from 'rc-slider';
 import 'rc-slider/assets/index.css';
 import { useDispatch, useSelector } from 'react-redux';
 import { getStock } from '../../redux/action/getStock';
+import { MdOutlineArrowDropDown, MdOutlineArrowDropUp } from 'react-icons/md';
+
 
 const IStockList = () => {
-  
+
   const dispatch = useDispatch()
+  const getDataStock = useSelector(state => state?.getStock?.getData)
+  console.log(111, getDataStock);
   const [chartData, setChartDAta] = useState({
     options: {
-      colors : [ "#1ac3de" , "#bd8a0e" ],
-      labels: ['Mutual Funds' , 'ETFs'],
+      colors: ["#1ac3de", "#bd8a0e"],
+      labels: ['Mutual Funds', 'ETFs'],
       dataLabels: {
         enabled: true,
         enabledOnSeries: undefined,
         formatter: function () {
-            return ''
+          return ''
         },
       }
     },
     series: [26, 19],
   })
-  const getDataStock = useSelector( state => state?.getStock?.getData)
-  useEffect(() => { 
+
+  useEffect(() => {
     dispatch(getStock())
   }, [])
-
-
 
   return (
     <div className='stock-wrapper-container' >
@@ -90,7 +91,7 @@ const IStockList = () => {
                             <p style={{ fontWeight: "100" }} >% of Portfolio Value <span>{value?.PortfolioValue}</span></p>
                           </li>
                           <li>
-                            <Slider 
+                            <Slider
                               min={0}
                               trackStyle={{ backgroundColor: "#15a215", height: 10 }}
                               railStyle={{
@@ -119,10 +120,35 @@ const IStockList = () => {
                             <p>Unrealized P&L <span>{value?.Unrealized}</span></p>
                           </li>
                           <li>
-                            <p style={{ fontWeight : '100' }} >% Return <span>{value?.Return}</span></p>
+                            <p style={{ fontWeight: '100' }} >% Return<span style={{ position: "relative", bottom: "13px" }} >
+                              {
+                                value?.id === 4 ?
+                                  <MdOutlineArrowDropDown color='red' />
+                                  : <MdOutlineArrowDropUp />
+                              }
+
+                              {value?.Return}</span></p>
                           </li>
                           <li>
-                          <Slider 
+                            <div className="unrealized-progress">
+                              <div className="progress-bg">
+                                {value.Return > 0 ? (
+                                  <div
+                                    className="positive"
+                                    style={{ width: value?.Return / 2 + "%" }}
+                                  />
+                                ) : (
+                                  <div
+                                    className="negative"
+                                    style={{
+                                      width: Math.abs(10) / 2 + "%",
+                                      marginLeft: 50 - Math.abs(20) / 2 + "%",
+                                    }}
+                                  ></div>
+                                )}
+                              </div>
+                            </div>
+                            {/* <Slider
                               min={0}
                               trackStyle={{ backgroundColor: "red", height: 10 }}
                               railStyle={{
@@ -140,7 +166,7 @@ const IStockList = () => {
                               }}
                               defaultValue={value?.defaultValue}
                               max={100}
-                            />
+                            /> */}
                           </li>
                         </ul>
                       </Col>
@@ -155,15 +181,21 @@ const IStockList = () => {
             }
           </Col>
           <Col lg={2} className="char-wrapper" >
-            <div>
+            <div className='chart-heading' >
               <h3>Portifolio</h3>
-              <Chart
-                options={chartData.options}
-                series={chartData.series}
-                type="donut"
-                width="300"
-              />
+              <Form.Select size="sm">
+                <option>Asset-wise</option>
+                <option>Firt select</option>
+                <option>Second select</option>
+                <option>Third select</option>
+              </Form.Select>
             </div>
+            <Chart
+              options={chartData.options}
+              series={chartData.series}
+              type="donut"
+              width="300"
+            />
           </Col>
         </Row>
       </Container>

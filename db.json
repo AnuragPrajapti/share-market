@@ -43,8 +43,8 @@
       "marketValue": "$9,545.54",
       "InvestedAmount": "$18,597.60",
       "PortfolioValue": "22.86%",
-      "Unrealized": "-$1,377.60",
-      "Return": "-8.26%",
+      "Unrealized": "$1,377.60",
+      "Return": "8.26%",
       "share": "US Equity",
       "shareName": "S&P 500 Index"
     },
@@ -76,7 +76,7 @@
       "InvestedAmount": "$52864.22",
       "PortfolioValue": "12.52%",
       "Unrealized": "$156.25",
-      "Return": "7.82",
+      "Return": "13.82",
       "share": "US Equity",
       "shareName": "S&P 500 Index"
     },

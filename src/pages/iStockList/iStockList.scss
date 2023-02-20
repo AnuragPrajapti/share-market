@@ -17,6 +17,7 @@
       .script-title {
         margin-top: 10px;
         padding: 0 2px !important;
+
         .list-icon {
           font-size: 28px;
           font-weight: 900;
@@ -24,7 +25,7 @@
           margin: 10px 0 0 0;
           float: left;
         }
-        
+
         p {
           display: flex;
           justify-content: center;
@@ -50,7 +51,7 @@
         .title-name {
           width: 150px;
           margin-top: 10px;
-          
+
           b {
             font-size: 26px;
             line-height: 20px;
@@ -88,7 +89,8 @@
           li {
             display: block;
             width: 200px;
-             padding: 0 10px;
+            padding: 0 10px;
+
             p {
               display: flow-root;
               font-weight: 100;
@@ -137,8 +139,10 @@
               display: block;
               text-align: end;
               position: relative;
+              font-weight: 900;
               bottom: 0px;
             }
+
           }
         }
       }
@@ -149,12 +153,53 @@
 
         ul {
           padding-left: 0% !important;
+          padding-top: 4px;
 
           li {
             width: 200px;
-            display: block;
             padding: 0 10px;
-            margin-top: 24px;
+            padding-top: 22px;
+            display: block;
+
+            .unrealized-progress .negative .progress-bar {
+              margin-left: -50%;
+              // background-color: red;
+              background-color: #00bd59;
+              margin-right: 50%;
+          }
+          
+          .unrealized-progress .positive .progress-bar {
+              background-color: red;
+              margin-left: 50%;
+          }
+          
+          .unrealized-progress .progress-bg {
+              background-color: #e9ecef;
+              display: flex;
+              align-items: center;
+              width: 100%;
+              border-radius: 50px;
+              height: 10px;
+              position: relative;
+              overflow: hidden;
+              bottom: 3px;
+          }
+          
+          .unrealized-progress .progress-bg .positive {
+              background-color: red;
+              // background-color: #00bd59;
+              margin-left: 50%;
+              height: 8px;
+              position: absolute;
+          }
+          
+          .unrealized-progress .progress-bg .negative {
+              background-color: #07af56;
+              // background-color: red;
+              height: 10px;
+              position: absolute;
+          }
+          
 
             p {
               font-weight: 900;
@@ -167,6 +212,13 @@
                 text-align: end;
                 position: relative;
                 bottom: 0px;
+                float: right;
+                font-weight: 900;
+
+                svg {
+                  color: green;
+                  font-size: 32px;
+                }
               }
             }
           }
@@ -189,9 +241,35 @@
   }
 
   .char-wrapper {
-    h3 {
-      margin-left: 30px;
-      font-size: inherit;
+    .chart-heading {
+      display: flex;
+
+      h3 {
+        margin-left: 30px;
+        font-size: inherit;
+        padding-top: 6px;
+      }
+
+      select {
+        border: none;
+        width: 220px;
+        position: relative;
+        right: 0px;
+        top: 0px;
+        font-family: initial;
+        padding-top: 5px;
+        left: 67px;
+        padding-bottom: 6px;
+        margin-bottom: 15px;
+        font-weight: 400;
+      }
+
+      select:focus {
+        outline: none;
+        border: none;
+        border-radius: 0px;
+        box-shadow: 0px 0px 0px 0px !important;
+      }
     }
   }
 }
